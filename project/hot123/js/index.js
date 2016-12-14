@@ -25,11 +25,11 @@ $('.nav > li').mouseleave(function(){
 
 /*轮播数组*****自定义*/
 var imgs=[
-  {"i":0,"img":"images/img01.jpg"},
-  {"i":1,"img":"images/img02.jpg"},
-  {"i":2,"img":"images/img03.jpg"},
-  {"i":3,"img":"images/img04.jpg"},
-  {"i":4,"img":"images/img02.jpg"},
+  {"i":0,"img":"Images/img01.jpg"},
+  {"i":1,"img":"Images/img02.jpg"},
+  {"i":2,"img":"Images/img03.jpg"},
+  {"i":3,"img":"Images/img04.jpg"},
+  {"i":4,"img":"Images/img02.jpg"},
 ];
 var slider={
 	LIWIDTH:0,
