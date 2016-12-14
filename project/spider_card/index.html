@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Yixiao Ning">
+	<meta name="description" content="time-consuming: 3+3 days;cards: cut by LiHui using the ps">
+	<meta name="keywords" content="js dom h5 jquery bootstrap">
+	<title>蜘蛛纸牌</title>
+	<link rel="stylesheet" href="vendor/bootstrap3.2.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<nav class="navbar navbar-default menu">
+	  <div class="container-fluid">
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	      <ul id="menu" class="nav navbar-nav">
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">游戏(G)</a>
+	          <ul class="dropdown-menu" role="menu">
+	            <li><a href="#">新游戏(N)<span class="navbar-right">F2</span></a></li>
+	             <li class="divider"></li>
+	            <li><a href="#">撤销(U)<span class="navbar-right">Ctrl+Z</span></a></li>
+	            <li><a href="#">提示(H)<span class="navbar-right">H</span></a></li>
+	            <li class="divider"></li>
+	            <li><a href="#">统计信息(S)<span class="navbar-right">F4</span></a></li>
+	            <li><a href="#">选项(O)<span class="navbar-right">F5</span></a></li>
+	            <li><a href="#">更改外观(A)<span class="navbar-right">F7</span></a></li>
+	            <li class="divider"></li>
+	            <li><a href="#">退出(X)</a></li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">帮助(H)</a>
+	          <ul class="dropdown-menu" role="menu">
+	            <li><a href="#">查看帮助(V)<span class="navbar-right">F1</span></a></li>
+	            <li><a href="#">关于蜘蛛纸牌(A)</a></li>
+	            <li class="divider"></li>
+	            <li><a href="#">联机获取更多游戏(M)</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	  </div><!-- /.container-fluid -->
+	</nav>
+	<div id="content">
+		<div id="main">
+			<!-- 纸牌拖拽区域 -->
+			<ul>
+				<!-- 相对定位 -->
+				<li id="col0" class="col"><ul></ul></li>
+				<li id="col1" class="col"><ul></ul></li>
+				<li id="col2" class="col"><ul></ul></li>
+				<li id="col3" class="col"><ul></ul></li>
+				<li id="col4" class="col"><ul></ul></li>
+				<li id="col5" class="col"><ul></ul></li>
+				<li id="col6" class="col"><ul></ul></li>
+				<li id="col7" class="col"><ul></ul></li>
+				<li id="col8" class="col"><ul></ul></li>
+				<li id="col9" class="col"><ul></ul></li>
+			</ul>
+			<!-- 纸牌发牌区域 -->
+			<ul class="deal_area"></ul>
+			<!-- 纸牌收集区域 -->
+			<ul class="colle_area"></ul>
+		</div>
+	</div>
+	<nav id="info">
+	    <ul class="row">
+	    	<li class="col-md-2">移牌：<span id="moveTimes"></span></li>
+            <li class="col-md-2">得分：<span id="score"></span></li>  
+        </ul>
+	</nav>
+	<script src="vendor/bootstrap3.2.2/js/jquery-1.11.3.js"></script>
+	<script src="vendor/bootstrap3.2.2/js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		window.onload=function(){
+			game.init();	
+		};
+	</script>
+</body>
+</html>

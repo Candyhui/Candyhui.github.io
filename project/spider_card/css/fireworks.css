@@ -1,0 +1,23 @@
+.up{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	opacity: 1;	
+	transition:all 2.5s cubic-bezier(0, 0, 0.35, 0.73);
+/*	width: 10px;
+	height: 20px;
+	border-radius: 10px/20px; 
+	background-color: rgb(255,162,218);
+	box-shadow: 0 5px 5px 5px rgba(255,162,218,0.6);*/
+}
+.spread{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 6px;
+	height: 20px;
+	/*-webkit-border-radius: 10px/20px;
+	-moz-border-radius: 10px/20px;*/
+    border-radius: 6px/20px; 
+	background-color: rgb(255,162,218);
+}

@@ -1,0 +1,204 @@
+
+/** detail   CSS Document */
+@charset "utf-8";
+body,ul,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+body{
+	font:14px simsun, arial, helvetica, clean, sans-serif;
+	color:#2b2b2b;
+	margin:0;
+	padding:0;
+}
+/*默认字体为14像素*/
+img{border:none;}
+/*图片自带的边框为0*/
+li{list-style:none;}
+/*无列表标志*/
+input,select,textarea{outline:none;}
+/*表单设置定义无轮廓*/
+textarea{resize:none;}
+/*设置用户不能操作调节元素大小*/
+a{
+	color:#2B2B2B;
+	text-decoration:none;
+}
+a:hover{
+	color:#F54343;
+	text-decoration:underline;
+}
+.comWidth{
+	width:990px;
+	margin:0 auto;
+}
+.lf{
+	float:left;
+}
+.rt{
+	float:right;
+}
+.clearfix:after{
+	content:"";
+	clear:both;
+	display:block;
+}
+/********************************nav************************/
+#all:after{
+	content:"";
+	clear:both;
+	display:block;
+}
+#all{
+	margin:5px 0;
+}
+#all a{
+	font-size:12px;
+}
+/*nav右边*/
+#rt_nav{
+	height:30px;
+	line-height:30px;
+}
+#rt_nav a{
+	color:#666;
+}
+
+/*nav左边*/
+#lf_nav ul li{
+	float:left;
+	margin-left:8px;
+	height:30px;
+	line-height:30px;
+}
+#lf_nav>ul>li a{
+	border-right:1px solid #ddd;
+	padding-right:8px;
+}
+#all #lf_nav>ul>li .tv{
+	border-right:0px;
+}
+
+
+
+/**********************中间**************************************/
+#ct_nav{
+	position:relative;
+}
+#ct_nav .more_than{
+	padding:9px 1px 5px 5px;
+	border:1px solid #fff;
+	float:left;
+	margin-left:5px;
+	position:relative;
+	z-index:100;
+	background:#fff;
+}
+#ct_nav .more_than b{
+	display:inline-block;
+	width:7px;
+	height:7px;
+	margin-right:5px;
+	background:url(../images/images/all.png) no-repeat 0 -937px;
+}
+#ct_nav .more_item{
+	width:165px;
+	height:85px;
+	border:1px solid #ddd;
+	position:absolute;
+	right:98px;
+	top:29px;
+	display:none;
+	z-index:100;
+	background:#fff;
+}
+#ct_nav .more_item ul li{
+	float:left;
+	margin:5px 8px;
+}
+
+#ct_nav:hover .more_item{
+	display:block;
+}
+#ct_nav:hover .more_than{
+	border:1px solid #ddd;
+	border-bottom:1px solid #fff;
+}
+/****************top**********************/
+#top{
+	border-bottom:1px solid #ddd;
+	padding:10px;
+}
+#zhan .zhannei a b{
+	display:inline-block;
+	width:12px;
+	height:8px;
+	background:url(../Images/images/all.png) no-repeat -7px -37px;
+	padding-right:5px;
+}
+#zhan .zhannei i{
+	font-size:12px;
+	color:#bcbcbc;
+	font-style:normal;
+	display:inline-block;
+	border-right:1px solid #bcbcbc;
+	padding:2px 5px;
+	margin:5px 0;
+	background:#fff;
+}
+#zhan{
+	position:relative;
+	float:left;
+}
+#zhan .zhannei{
+	border:1px solid #bcbcbc;
+	position:relative;
+}
+#nei_item ul li a{
+	font-size:12px;
+	color:#999;
+	margin:3px 6px;
+}
+#nei_item{
+	border:1px solid #bcbcbc;
+	display:none;
+	position:absolute;
+	width:60px;
+	top:29px;
+	left:0px;
+	background:#fff;
+}
+#zhan .zhannei:hover a b{
+	background:url(../Images/images/all.png) no-repeat -7px -7px;
+}
+#zhan:hover #nei_item{
+	display:block;
+}
+#search{
+	margin-left:20px;
+}
+#search .text{
+	height:26px;
+	color:#bcbcbc
+}
+#search button{
+	float:right;
+	background:url(../Images/images/all.png) no-repeat 0px -55px;
+	width:40px;
+	height:30px;
+	cursor: pointer;
+	border:1px solid #bcbcbc;
+	border-left:1px solid transparent;
+}
+#lf_top{
+	width:280px;
+}
+#lf_top .bread_crumb{
+	float:right;
+	height:26px;
+	line-height:26px;
+}
+#lf_top>.bread_crumb>a,#lf_top>.bread_crumb>span{
+	font-size:12px;
+	color:#2b2b2b;
+}
+#lf_top>.bread_crumb>a:hover{
+	color:#BA2636;
+}

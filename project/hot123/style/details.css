@@ -1,0 +1,206 @@
+/** detail   CSS Document */
+@charset "utf-8";
+body,ul,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+body{
+	font:12px simsun, arial, helvetica, clean, sans-serif;
+	color:#2b2b2b;
+	margin:0;
+	padding:0;
+}
+/*默认字体为14像素*/
+img{border:none;}
+/*图片自带的边框为0*/
+li{list-style:none;}
+/*无列表标志*/
+input,select,textarea{outline:none;}
+/*表单设置定义无轮廓*/
+textarea{resize:none;}
+/*设置用户不能操作调节元素大小*/
+a{
+	color:#2B2B2B;
+	text-decoration:none;
+}
+a:hover{
+	color:#F54343;
+	text-decoration:underline;
+}
+.comWidth{
+	width:990px;
+	margin:0 auto;
+}
+.lf{
+	float:left;
+}
+.rt{
+	float:right;
+}
+/*header*/
+#top{
+	border-bottom:1px solid #ddd;
+	padding:5px 0;
+}
+/*********section***********/
+#main{
+	background-color:#f9f9f9;
+	padding-bottom:100px;
+}
+#main>div{
+	background:url(../Images/images/logo_bg01.jpg) no-repeat;
+	padding-top:80px;
+}
+#main>div>#rt_main>h3{
+	font-size:14px;
+	font-weight:normal;
+	padding-bottom:30px;
+}
+#main>div>#rt_main>div>p:nth-child(1){
+	width:100px;
+	height:30px;
+	background:url(../Images/images/qq_01.png) no-repeat;
+}
+#main>div>#rt_main>div>p:nth-child(2){
+	width:100px;
+	height:30px;
+	background:url(../Images/images/wb_01.gif) no-repeat;
+}
+#main>div>#rt_main>div>p:nth-child(3){
+	width:100px;
+	height:30px;
+	background:url(../Images/images/cmcc_01.png) no-repeat;
+}
+#main>div>#rt_main>div>p:nth-child(1):hover{
+	width:100px;
+	height:30px;
+	background:url(../Images/images/qq_02.png) no-repeat;
+}
+#main>div>#rt_main>div>p:nth-child(2):hover{
+	width:100px;
+	height:30px;
+	background:url(../Images/images/wb_02.gif) no-repeat;
+}
+#main>div>#rt_main>div>p:nth-child(3):hover{
+	width:100px;
+	height:30px;
+	background:url(../Images/images/cmcc_02.png) no-repeat;
+}
+
+
+#lf_main{
+	padding-left:150px;
+	width:600px;
+	height:400px;
+	position:relative;
+}
+#lf_main h2{
+	text-align:center;
+	padding-bottom:30px;
+}
+#tab>p>a{
+	float:left;
+	border:1px solid #ddd;
+	width:100px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	font-size:15px;
+	position:relative;
+}
+#tab a.you{
+	font-weight:bold;
+	border-right:1px solid transparent;
+	border-bottom:1px solid #fff;
+	background:#fff;
+	z-index:100;
+}
+#tab a.phone{
+	background:#fff;
+	border-bottom:1px solid #fff;
+}
+#tab .lie{
+	border:1px solid #ddd;
+	float:left;
+	z-index:50;
+	position:absolute;
+	top:81px;
+	left:150px;
+	padding:30px 10px;
+	background:#fff;
+	height: 250px;
+}
+#tab .lie ul{
+	float:left;
+	width:600px;
+}
+#tab .lie ul li{
+	float:left;
+	font-size:14px;
+	padding:5px 10px;
+}
+
+#tab .lie .lie_1{
+	width:100px;
+	height:30px;
+	line-height:30px;
+	text-align:right;
+}
+#tab .lie li input{
+	width:200px;
+	height:20px;
+	line-height:20px;
+}
+#tab .lie .lie_2{
+	color:#bbb;
+}
+#tab .lie .yan_ma{
+	width:100px;
+}
+#tab .lie img{
+	vertical-align:bottom;
+	height:25px;
+	width:60px;
+	padding:0 5px;
+}
+#tab .lie p{
+	width:500px;
+	text-align:center;
+	margin:15px 0;
+}
+#tab .lie button{
+	width:100px;
+	height:30px;
+	background:#008DE7;
+	color:#fff;
+	border:1px solid #008de7;
+	cursor:pointer;
+}
+
+
+/*footer*/
+#footer{
+	border-top:1px solid #666;
+	padding-top:30px;
+	background-color:#f9f9f9;
+	height:100px;
+}
+#foot_2{
+	text-align:center;
+	color:#666;
+}
+
+#foot_1{
+	text-align:center;
+	font-size:12px;
+	height:30px;
+	line-height:30px;
+}
+#foot_1 a{
+	border-left:1px solid #666;
+	padding:0 5px;
+}
+
+label.error{
+			border:1px solid red;
+			background:pink;
+			color:red;
+			padding:0 12px;
+		}

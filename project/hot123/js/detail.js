@@ -1,0 +1,30 @@
+jQuery.validator.addMethod('mobile',
+			function(value){
+				if(value.trim()!=="")
+					return /^1[34578]\d{9}$/.test(value);
+				return true;
+			})
+		$("#form-msg").validate({
+			rules:{
+				uname:"required",
+				upwd1:{required:true,rangelength:[6,20]
+				},
+				upwd2:{equalTo:"#upwd1"},
+				mail:{required:true,email:true},
+				mobile:{required:true,mobile:true},
+				site:"url",
+				birth:"date",
+			},
+			messages:{
+				uname:"用户名不准为空",
+				upwd1:{
+					required:"密码不能为空",
+					rangelength:"密码长度必须介于6~20位之间"
+				},
+				upwd2:{equalTo:"确认密码必须一致"},
+				mail:{required:"邮箱不能为空",email:"邮箱格式不符"},
+				mobile:{required:"手机号不能为空",mobile:"手机号不对"},
+				site:"url地址格式不正确",
+				birth:"日期格式不正确",
+			},
+		})

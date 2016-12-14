@@ -1,0 +1,67 @@
+
+/** detail   CSS Document */
+@charset "utf-8";
+body,ul,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+body{
+	font:14px simsun, arial, helvetica, clean, sans-serif;
+	color:#2b2b2b;
+	margin:0;
+	padding:0;
+}
+/*默认字体为14像素*/
+img{border:none;}
+/*图片自带的边框为0*/
+li{list-style:none;}
+/*无列表标志*/
+input,select,textarea{outline:none;}
+/*表单设置定义无轮廓*/
+textarea{resize:none;}
+/*设置用户不能操作调节元素大小*/
+a{
+	color:#2B2B2B;
+	text-decoration:none;
+}
+a:hover{
+	color:#F54343;
+	text-decoration:underline;
+}
+.comWidth{
+	width:990px;
+	margin:0 auto;
+}
+.lf{
+	float:left;
+}
+.rt{
+	float:right;
+}
+/********************************all************************/
+#all:after{
+	content:"";
+	clear:both;
+	display:block;
+}
+#all{
+	margin:5px 0;
+}
+#all a{
+	font-size:12px;
+}
+#footer{
+	border-top:1px solid #666;
+	padding-top:10px;
+}
+#footer .foot_2{
+	text-align:center;
+	color:#666;
+}
+#footer .foot_1{
+	text-align:center;
+	font-size:12px;
+	height:30px;
+	line-height:30px;
+}
+#footer .foot_1 a{
+	border-left:1px solid #666;
+	padding:0 5px;
+}

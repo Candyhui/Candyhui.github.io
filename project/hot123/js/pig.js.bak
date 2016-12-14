@@ -1,0 +1,26 @@
+/*******导航栏，运用hover***************/
+/*	$('.nav a').click(function(e){
+				e.preventDefault();
+				$(this).parent().addClass('active').siblings('.active').removeClass('active');
+			});*/
+$('.nav > li').mouseenter(function(){
+				$(this).addClass('active').siblings('.active').removeClass('active');
+
+				$(this).children('.dropdown').slideDown(300);
+			});
+			$('.nav > li').mouseleave(function(){
+				$(this).addClass('active').siblings('.active').removeClass('active');
+
+				$(this).children('.dropdown').slideUp(300);
+			});
+
+
+			$('.nav > li').hover(function(){
+				$(this).addClass('active').siblings('.active').removeClass('active');
+
+				$(this).children('.dropdown').slideDown(300);
+			}, function(){
+				$(this).addClass('active').siblings('.active').removeClass('active');
+
+				$(this).children('.dropdown').slideUp(300);
+			});

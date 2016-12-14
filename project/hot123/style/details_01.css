@@ -1,0 +1,277 @@
+
+/** detail   CSS Document */
+@charset "utf-8";
+body,ul,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+body{
+	font:14px simsun, arial, helvetica, clean, sans-serif;
+	color:#2b2b2b;
+	margin:0;
+	padding:0;
+}
+/*默认字体为14像素*/
+img{border:none;}
+/*图片自带的边框为0*/
+li{list-style:none;}
+/*无列表标志*/
+input,select,textarea{outline:none;}
+/*表单设置定义无轮廓*/
+textarea{resize:none;}
+/*设置用户不能操作调节元素大小*/
+a{
+	color:#2B2B2B;
+	text-decoration:none;
+}
+a:hover{
+	color:#F54343;
+	text-decoration:underline;
+}
+.comWidth{
+	width:990px;
+	margin:0 auto;
+}
+.lf{
+	float:left;
+}
+.rt{
+	float:right;
+}
+/********************************all************************/
+#all:after{
+	content:"";
+	clear:both;
+	display:block;
+}
+#all{
+	margin:5px 0;
+}
+#all a{
+	font-size:12px;
+}
+/**********************main*****************************/
+#main{
+	padding:0 0 20px 0;
+	min-height:500px;
+	margin-bottom:30px;
+}
+#main a{
+	color:#004276;
+}
+#main a:hover{
+	color:#F54343;
+}
+#recommend{
+	border-top:4px solid #444;
+	padding-top:10px;
+}
+#recommend h4{
+	border-top:1px solid #ddd;
+	margin:5px 0;
+	padding:10px 0;
+	font-weight:normal;
+}
+#recommend .comment{
+	font-size:14px;
+	color:#999;
+	padding-bottom:10px;
+}
+#recommend .comment a{
+	color:#999;
+}
+#recommend .comment a:hover{
+	color:#F54343;
+}
+#recommend ul li{
+	list-style-type:disc;
+	margin-left:17px;
+	margin-bottom:5px;
+}
+#recommend ul li a{
+	font-size:10px;
+}
+#recommend .wechat{
+	border:1px solid #e3e3e3;
+	margin-top:15px;
+	padding:10px 5px 10px 10px;
+}
+#recommend .wechat dl{
+	width:40%;
+	border-right:1px solid #e3e3e3;
+	text-align:center;
+}
+#recommend .wechat dl dd {
+	font-size:10px;
+	color:#666;
+}
+#recommend p{
+	margin-top:15px;
+}
+#recommend p b{
+	display:inline-block;
+	width:11px;
+	height:13px;
+	margin-left:10px;
+	background:url(../Images/images/all.png) no-repeat 0px -1075px;
+}
+#recommend p a{
+	font-weight:bold;
+}
+#recommend .attention{
+	margin-top:20px;
+}
+#recommend .attention span{
+	float:right;
+	height:22px;
+	line-height:22px;
+	border:1px solid #ECD181;
+	background-color:#FCF8E7;
+	margin-left:5px;
+}
+
+#lf_main{
+	width:640px;
+}
+
+
+#first_mian{
+	border-bottom:1px solid #ddd;
+	padding-bottom:5px;
+}
+#first_mian h2{
+	font-size:24px;
+	padding-bottom:30px;
+}
+#first_mian .time_mian span{
+	font-size:12px;
+	color:#808080;
+}
+
+
+
+
+#first_mian.zong_logo b{
+	display:inline-block;
+	width:28px;
+	height:28px;
+}
+#first_mian>div>b>a{
+	float:right;
+	background-image:url(../Images/images/share_e50.jpg);
+	background-repeat:no-repeat;
+	width:40px;
+	height:30px;
+	margin:0 5px;
+}
+#first_mian>div>b>.xin_logo{
+	background-position:0 0;
+}
+#first_mian>div>b>.QQ_logo{
+	background-position:0 -32px;
+}
+#first_mian>div>b>.we_logo{
+	background-position:0 -66px;
+}
+
+
+#sec_main .yuan_title{
+	padding-top:30px;
+	padding-bottom:50px;
+}
+#sec_main>.yuan_title>p{
+	margin-bottom:30px;
+	text-indent:2em;
+	line-height:25px;
+}
+#sec_main>.yuan_title>.erweima{
+	width:640px;
+	text-align:center;
+}
+#sec_main>.yuan_title>.biji{
+	font-size:12px;
+	padding:30px 0;
+}
+#sec_main>.yuan_title>.tui>div>b>a{
+	float:right;
+	background-image:url(../Images/images/share_e50.jpg);
+	background-repeat:no-repeat;
+	width:40px;
+	height:30px;
+	margin-right:5px;
+}
+#sec_main>.yuan_title>.tui>div>b>.xin_logo{
+	background-position:0 0;
+}
+#sec_main>.yuan_title>.tui>div>b>.QQ_logo{
+	background-position:0 -32px;
+}
+#sec_main>.yuan_title>.tui>div>b>.we_logo{
+	background-position:0 -66px;
+}
+#sec_main>.yuan_title>.tui>p{
+	background:url(../Images/images/zan.png) no-repeat;
+	padding-left:20px;
+	border:1px solid #F54343;
+	height:25px;
+    line-height:25px;
+    cursor: pointer;
+	width:50px;
+	color:#F54343;
+}
+#discuss .dis_1 span{
+	font-size:12px;
+	color:#999;
+}
+#discuss .dis_1 span a{
+	border-left:1px solid #999;
+	padding-left:5px;
+	color:#999;
+	margin-left:5px;
+}
+#discuss .dis_1 p{
+	float:right;
+	color:#999;
+}
+#discuss .dis_1 p a{
+	color:#999;
+	
+}
+#discuss .dis_2{
+	margin-top:30px;
+}
+#discuss .dis_2 p{
+	border:1px solid #ddd;
+	border-top:1px solid transparent;
+	background:#F7F7F7;
+	height:30px;
+}
+#discuss .dis_2 p button{
+	background:#F54343;
+	color:#fff;
+	float:right;
+	height:30px;
+	line-height:30px;
+}
+#discuss .dis_2 span a{
+	color:#999;
+	font-size:12px;
+}
+#comment{
+	margin-top:30px;
+}
+#comment>.com_1>p{
+	margin:20px 0;
+}
+
+#comment .com_1 .com_1_rt p{
+	float:right;
+}
+#comment .com_1 .com_1_rt{
+	margin:20px 0;
+	padding-bottom:20px;
+	border-bottom:1px dotted #ddd;
+}
+#comment .more_com{
+	background:#ddd;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+}

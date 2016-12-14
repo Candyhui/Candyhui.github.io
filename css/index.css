@@ -1,0 +1,263 @@
+body{
+	margin: 0;
+	font-size: 1.8vw;
+}
+h2{
+	font-size: 2.6vw;
+}
+h3{
+	font-size: 2.0vw;
+}
+div,ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: #000;
+	cursor: pointer;
+}
+
+.responsive-img{
+	width: 100%;
+	height: auto;
+}
+.left_area{
+	box-sizing: border-box;
+	position: fixed;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	padding: 1.5em;
+	/*background: #3E9F9F;*/
+	background: url(../img/photo.jpg) no-repeat;
+	background-size: cover;
+}
+.left_content{
+	position: absolute;
+	width: 89%;
+	top: 55%;
+	height: auto;
+	transform: translateY(-50%);
+	text-align: center;
+	color:antiquewhite;
+}
+.intro{
+	margin-bottom: 6vw;
+}
+.intro>div{
+	min-width: 40vw;
+}
+.intro strong{
+	display: block;
+	margin: 0.5vw 0;
+}
+.intro span{
+	display: inline-block;
+	width: 50%;
+}
+.social{
+	position: relative;
+	display: inline-block;
+	padding: 0px 10px;
+}
+.social.icon{
+	padding: 0 5px;
+}
+.social.icon a{
+	color: antiquewhite;
+}
+.social.icon a:hover{
+	color: cornflowerblue;
+}
+.social.detail{
+	position: absolute;
+	width: 150%;
+	height: 120%;
+	line-height: 120%;
+	bottom: 130%;
+	left: -25%;
+	border: 0.2vw solid #fff;
+}
+.right_area{
+	box-sizing: border-box;
+	position: absolute;
+	right: 0;
+	width: 50%;
+	height: auto;
+	padding: 3.5em;
+}
+.content_basic .exp{
+	position: relative;
+	padding-left: 1em; 
+}
+.content_basic .exp::before{
+	position: absolute;
+	content: "";
+    width: 0.3em;
+    height: 0.3em;
+    background-color: #2A54F5;
+    left: 0.3em;
+    top: 0.3em;
+    border-radius: 50%;
+}
+.content_tag{
+	display: inline-block;
+	background-color: #33E5BB;
+    background-image: -webkit-linear-gradient(-360deg, #33E5BB 0%,#2A54F5 100%);
+    background-image: linear-gradient(90deg,#33E5BB 0%,#2A54F5 100%);
+	background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+.ski{
+	min-height: 80vw;
+}
+.ski_node{
+	position: relative;
+	margin-left: 2vw;
+	width: 2vw;
+	height: 2vw;
+	border-radius: 50%;
+	border: 0.2vw solid #33E5BB;
+}
+.placeholder{
+	height: 10vw;
+}
+.ski_node .ski_node_in{
+	position: absolute;
+	top: 0.5vw;
+	left: 0.5vw;
+	width: 1vw;
+	height: 1vw;
+	background: #33E5BB;
+	border-radius: 50%;
+}
+.ski_node .ski_node_xline{
+	position: absolute;
+	top: 1vw;
+	left: 2vw;
+	width: 6vw;
+	border-top: 0.2vw solid #33E5BB;
+}
+.ski_node .ski_node_content{
+	position: absolute;
+	min-width: 18vw;
+	top: 1vw;
+	left: 8vw;
+	padding: 1vw 2vw;
+	border: 0.2vw solid #33E5BB;
+	transform: translateY(-50%);
+}
+.ski_node .ski_node_yline{
+	position: absolute;
+	bottom: 2vw;
+	left: 1vw;
+	height: 10vw;
+	border-left: 0.2vw solid #33E5BB;
+}
+.slider{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.arrow{
+	position: absolute;
+	color: #33E5BB;
+	z-index: 1000;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.arrow.prev{
+	left: 0;
+}
+.arrow.next{
+	right: 0;
+}
+.item{
+	position: absolute;
+	/*display: none;*/
+	width: 90%;
+	top: 0;
+	left: 5%;
+	transition: all .3s linear;
+}
+.item.show{
+	display: block;
+}
+.item.item-0{
+	left: -95%;
+}
+.item.item-1{
+	
+	left: 5%;
+}
+.item.item-2{
+	left: 105%;
+}
+.item.item-3{
+	left: 205%;
+}
+.mask{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: all .3s linear;
+}
+.mask.out{
+	top: 0;
+}
+.mask .mask_back{
+	background-color: rgba(0,0,0,0.6);
+	width: 100%;
+	height: 100%;
+}
+.mask .mask_content{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	padding: 15% 0 10% 0;
+	text-align: center;
+}
+@media screen and (max-width: 768px){
+	.left_area{
+		width: 100%;
+		height: 70vh;
+		position: relative;
+	}
+	.right_area{
+		width: 100%;
+		height: auto;
+		position: static;
+	}
+	.left_content{
+		transform: translateY(0);
+	}
+	.ski_node .ski_node_content{
+		min-width: 40vw;
+	}
+	.ski_node{
+		margin-left: 10vw;
+	}
+	.intro>div{
+		min-width: 60vw;
+	}
+}
+@media screen and (max-width: 368px){
+	.ski_node .ski_node_content{
+		min-width: 60vw;
+	}
+	.ski_node{
+		margin-left: 2vw;
+	}
+	.intro>div{
+		min-width: 70vw;
+	}
+}

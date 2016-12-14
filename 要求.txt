@@ -1,0 +1,7 @@
+1. 熟悉html,css,js||jquery,bootstrap
+2. 前端 mv* 框架
+3. 响应式开发,移动开发(ionic,react native)
+4. css预处理语言
+5. 服务器端语言(php,node.js)
+6. 前端的性能优化
+7. 前端自动化构建工具

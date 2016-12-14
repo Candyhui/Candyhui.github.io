@@ -1,0 +1,118 @@
+/*对所有的li设置过度效果*/
+/*li.deal{
+	transition: all .3s linear;
+}*/
+/*顶部*/
+*::selection{
+	background-color: transparent;
+}
+#menu span.navbar-right{
+	margin-right: 0;
+}
+nav.menu{
+	margin-bottom: 0;
+}
+/*中间纸牌拖拽区域*/
+#content{
+	overflow: hidden;
+	background-color: green;
+	padding: 30px 91.5px 40px;
+}
+#main{
+	min-height: 635px;
+	position: relative;
+}
+#main ul{
+	list-style:none;
+	padding: 0;
+}
+#main>ul>li{
+	float: left;
+	width: 115px;
+	height: 154px;
+	margin-right: 10px;
+	border: 1px solid #B8B8B8;
+	border-radius: 5px;	
+	border-bottom: 0;
+}
+@media screen and (max-width:1280px){
+	#main>ul>li{
+		width: 80px;
+		height: 108px;
+	}
+	#main img{
+		width: 80px;
+	}
+}
+@media screen and (min-width:1280px){
+	#main>ul>li{
+		width: 100px;
+		height: 135px;
+	}
+	#main img{
+		width: 100px;
+	}
+}
+@media screen and (min-width:1440px){
+	#main>ul>li{
+		width: 115px;
+		height: 154px;
+	}
+	#main img{
+		width: 115px;
+	}
+}
+#main>ul>li:last-child{
+	margin-right: 0;
+}
+/*鼠标经过空的格子的时候添加该类*/
+.lihover{
+	border: 1px solid rgba(0,0,0,0.8);
+	box-shadow: 0 0 6px 4px rgba(255,255,0,0.6);
+}
+/*鼠标经过img(纸牌)的时候添加该类*/
+.imghover{
+	padding: 1px;
+	box-shadow: 0 0 6px 4px rgba(255,255,0,0.6);
+}
+/*鼠标经过div(待发牌区域)的时候添加该类*/
+.divhover{
+	padding: 1px;
+	box-shadow: 0 0 6px 4px rgba(255,255,0,0.6);
+}
+#main li.col{
+	position: relative;
+}
+#main li.col ul li{
+	position: absolute;
+	/*top: 0;*/
+}
+/*中间纸牌发牌*/
+#main ul.deal_area>li{
+	position: absolute;
+	margin:0;
+	border:0;
+}
+/*中间纸牌收集*/
+#main ul.colle_area>li{
+	position: absolute;
+	margin:0;
+	border:0;
+}
+/*底部信息统计*/
+#info{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #F1EDED;
+}
+#info ul{
+	list-style:none;
+	margin: 0;
+}
+#info ul li{
+	float: right;
+	text-align: left;
+	border-left: 1px solid #D7D7D7;
+	padding: 5px 5px;
+}

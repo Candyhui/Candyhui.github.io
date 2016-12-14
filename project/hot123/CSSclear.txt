@@ -1,0 +1,23 @@
+/* CSS Document */
+
+@charset "utf-8";
+
+body,ul,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+
+body{font-size:12px;}
+/*默认字体为12像素*/
+img{border:none;}
+/*图片自带的边框为0*/
+li{list-style:none;}
+/*无列表标志*/
+input,select,textarea{outline:none;}
+/*表单设置定义无轮廓*/
+textarea{resize:none;}
+/*设置用户不能操作调节元素大小*/
+a{text-decoration:none;}
+/*a标记默认无下划线*/
+
+/*请浮动*/
+.clearfix:after{content:"";display:block;clear:both;}
+/*伪类清除*/
+.clearfix{zoom:1;}
